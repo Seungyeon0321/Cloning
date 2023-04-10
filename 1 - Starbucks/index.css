@@ -101,7 +101,7 @@ button.Join {
     align-items: center;
 }
 
-.Article.article.first {
+.Article.article.right0 {
     background-color: #F6C0D9;
 }
 
@@ -189,20 +189,36 @@ button.Join {
     border: 1px solid #ffffff;
 }
 
-.Article.article.second {
+.Article.article.left0 {
     background-color: #9FC292;
 }
 
-.Article.article.third {
+.Article.article.right1 {
     background-color: #FFF4D3;
 }
 
-.Article.article.fourth,
-.Article.article.fifth {
+.Article.article.left1,
+.Article.article.right2 {
     background-color: #D4E9E2;
 }
 
-.Article.article.sixth {
+.Article.article.left1 .Article.title,
+.Article.article.right2 .Article.title,
+.Article.article.left2 .Article.title {
+font-size: 1.6rem;
+font-weight: 600;
+color: #1E3932;
+}
+
+.Article.article.left1 .Article.para,
+.Article.article.right2 .Article.para,
+.Article.article.left2 .Article.para{
+    font-size: 1.1rem;
+    font-weight: 1;
+    line-height: 30px;
+}
+
+.Article.article.left2  {
     background-color: #1E3932;
 }
 
