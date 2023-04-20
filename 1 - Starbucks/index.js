@@ -69,13 +69,13 @@ for(let i = 0; i < rightImg.length; i++) {
             <button class="Article btn">${p[i].button}</button>
         </div>
     </div>
-    <div class="Article image">
+    <div class="Article image right${i}">
         <img class="Article-image" src="${p[i].image}" alt="">
     </div>
 </div>
 
 <div class="Article__main second">
-            <div class="Article image">
+            <div class="Article image left${i}">
                     <img class="Article-image" src="${q[i].image}" alt="">
             </div>
             <div class="Article article left${i}">
