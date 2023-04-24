@@ -1,6 +1,9 @@
 'use strict'
 
 const wrapMainpage = document.querySelector('.warp')
+const toggleBtn = document.querySelector('.toggle__button')
+const sideBar= document.querySelector('.sidebar');
+
 
 const page1 =  {
     title: "For their Easter basket",
@@ -93,3 +96,20 @@ for(let i = 0; i < rightImg.length; i++) {
 }
 
 printMainPage(rightImg, leftImg);
+
+const hideScrollBar = () => {
+    if (sideBar.classList.contains('toggle')) {
+        document.body.style.overflow = 'auto'
+        wrapMainpage.classList.remove('hidden')
+    } else {
+        document.body.style.overflow = 'hidden'
+        wrapMainpage.classList.add('hidden')
+    }
+}
+
+toggleBtn.addEventListener('click', () => {
+    sideBar.classList.toggle('toggle');
+    hideScrollBar();
+})
+
+
